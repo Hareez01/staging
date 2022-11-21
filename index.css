@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    padding: 10px 14px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+/* .nav ul li:hover{
+    background: lightblue;
+    
+}
+.nav ul li a:hover{
+    color: white
+} */
+.logo{
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.wrapper{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./img/builder.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.content h1{
+    margin-top: 300px;
+}
+button{
+    padding: 10px 40px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: transparent;
+    color: white;
+}
+.ourDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.who{
+    height: 80vh;
+    width: 48%;
+    text-align: left;
+}
+.image{
+    margin-top: 30px;
+    height: 70vh;
+    width: 48%;
+    background: url(./img/IMG_0258.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bu button{
+    color: black;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.who h1, h3{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.who{
+    padding: 4px 8px;
+}
+/* end of ourDiv */
+.project{
+    height: 50vh;
+    margin-top: 50px;
+}
+.our{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.our h5{
+    text-align: center;
+    color: orange;
+}
+.our h1{
+    text-align: center;
+}
+.weDo{
+    margin-left: 20px;
+}
+.design h1, h4{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.design h4{
+    color: orange;
+}
+.colume{
+    display: flex;
+    justify-content: space-between;
+
+}
+.col{
+    width: 24%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.col h1{
+    font-weight: bold;
+}
+.fa-camera, .fa-hospital, .fa-building, .fa-home{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+/* end of design */
+.meet{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.meet p{
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.meet .me{
+    color: black;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pic{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.img:hover{
+    scale: .9;
+}
+.img{
+    width: 31%;
+    height: 700px;
+    box-shadow: 2px 1px 8px #cccccc;
+    cursor: pointer;
+}
+.view button{
+   color: black;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 0;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-radius: 10px;
+}
+.p1{
+    background: url('./img/template44.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p2{
+    background: url('./img/template5.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.p3{
+    background: url('./img/template6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media screen and (max-width:375px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content h1{
+        margin-top: 100px;
+    }
+    .ourDiv{
+        flex-direction: column;
+        width: 100%;
+    }
+    .who{
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        margin-top: 300px;
+        height: 70vh;
+        width: 100%;
+        background: url(./img/IMG_0258.JPG);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .project{
+        height: 20vh;
+    }
+    .colume{
+        flex-direction: column;
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .meet{
+        flex-direction: column;
+        width: 100%;
+    }
+    .ourTeam{
+        text-align: center;
+    }
+    .view{
+        text-align: center;
+    }
+    .pic{
+        flex-direction: column;
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}
